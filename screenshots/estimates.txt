@@ -1,0 +1,20 @@
+1. Minimum RTO for a single AZ outage: RTO ~ 5min
+	00:00 problem happens
+	00:01 trigger auto recover from replica instance 
+	00:05 recover completed
+
+2. Minimum RTO for a single region outage: RTO ~ 41min
+	00:00 problem happens
+	00:05 alert auto triggers
+	00:06 awake on-call staffs
+	00:16 staffs start trouble shooting
+	00:31 found root caused
+	00:36 Remediation is start
+	00:41 Remediation is completed
+
+
+3. Minimum RPO for a single AZ outage: 
+	RPO ~1min with enabling multi AZ
+
+4. Minimum RPO for a single region outage
+	RPO ~1min with enabling read replica instance

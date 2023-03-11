@@ -1,0 +1,18 @@
+MySQL [udacity]> insert into Employees(id, first_name, last_name) values(2,'Toni', 'Teh');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+MySQL [udacity]> insert into Employees(id, first_name, last_name) values(2,'Toni', 'Teh');
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    9
+Current database: udacity
+
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> select * from Employees;
++----+------------+-----------+
+| id | first_name | last_name |
++----+------------+-----------+
+|  1 | Roman      | Duong     |
+|  2 | Toni       | Teh       |
++----+------------+-----------+
+2 rows in set (0.00 sec)
